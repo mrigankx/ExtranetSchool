@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">LernpassplusSchool</string>
+    <string name="lpp_logo">logo of lernpassplus</string>
+    <string name="email">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="required">*Required</string>
+    <string name="sign_in">Sign-In</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="register">Not registered yet? Sign up here.</string>
+
+    <string name="teacher">Teacher</string>
+    <string name="teacher_login">Teacher Login</string>
+    <string name="licenses">Licenses</string>
+    <string name="classesAndLearners">Classes &amp; learners</string>
+    <string name="timetable">Timetable</string>
+    <string name="performanceComparison">Performance Comparison</string>
+    <string name="performanceComparisonArchive">Performance Comparison Archive</string>
+    <string name="account">Account</string>
+    <string name="dataOverview">Data Overview</string>
+
+    <string name="contact">Contact</string>
+    <string name="notes">Notes</string>
+    <string name="announcements">Announcements</string>
+    <string name="documents">Documents</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="miss">Miss</string>
+
+    <string name="selected_item">Selected item:</string>
+    <string-array name="status">
+        <item>Active Teacher</item>
+        <item>Inactive Teacher</item>
+    </string-array>
+
+    <string name="select_gender">Selected Gender:</string>
+    <string-array name="currentGender">
+        <item>Miss</item>
+        <item>Mister</item>
+    </string-array>
+
+    <string name="information">Show Info</string>
+    <string name="informationDescription">In order to prevent multiple registration of learners by subject teachers at your school, please mark the subject teachers. With this measure, the “Manage” menu item will not be activated for subject teachers.</string>
+    <string name="license_information">In order for your teachers to be able to use the learning pass plus, please only activate the package. In the canton of St.Gallen, 50% of the costs for the package will be covered by the canton in the 2021/2022 school year.
+The Stellwerk-plus tests are charged additionally to the schools: 7 francs per test/learner. Please activate the Stellwerk-plus tests VV (imagination), TLV (technical and logical understanding) and PSM (personal, social and methodical skills) for use.</string>
+    <string name="teacher_addTeacher">Add Teacher</string>
+    <string name="add_class">Add Class</string>
+    <string name="add_student">Add Student</string>
+    <string name="teacher_importTeacher">Import Teachers From List</string>
+    <string name="teacher1">Mr Jhon Doe</string>
+    <string name="student1">Miss Chandeliers cosmari</string>
+    <string name="student2">Mr Albert Halam</string>
+    <string name="studentEmail">praveen@arcadix.com</string>
+
+    <string name="name">Name</string>
+    <string name="firstName">Firstname</string>
+    <string name="abbreviation">Abbreviation</string>
+    <string name="teacher_cell_phone">Cell Phone</string>
+    <string name="teacher_cell_phone_text">Cell Phone text box</string>
+    <string name="phone">Phone</string>
+    <string name="subject_teacher">Subject Teacher</string>
+    <string name="teacher_check">icon for checking values</string>
+    <string name="teacher_not_check">icon for not checking values</string>
+    <string name="teacher_deactivate">icon for deactivating values</string>
+    <string name="teacher_save">icon for saving values</string>
+    <string name="teacher_edit">edit teacher values here</string>
+
+    <string name="email_teachers_send_email">Click here to send emails to selected teachers</string>
+    <string name="email_teachers_mark_all">Mark all</string>
+
+    <string name="generation_date">01/05/2022</string>
+    <string name="generation_year">05/2022</string>
+    <string name="license_school_year">School Year: </string>
+    <string name="generation_class">Class</string>
+    <string name="generation_package">Package</string>
+    <string name="generation_test_vv">VV</string>
+    <string name="generation_test_tlv">TLV</string>
+    <string name="generation_test_psm">PSM</string>
+    <string name="generation_save_teacher">Click here to save teacher details</string>
+    <string name="school_level">School Level</string>
+    <string name="student">Student</string>
+    <string name="total_student">Number of learners</string>
+    <string name="school_year">School Year</string>
+    <string name="school_level_number">Level 7</string>
+    <string name="check">Check</string>
+    <string name="edit">Edit</string>
+    <string name="gender">Gender</string>
+    <string name="surname">Surname</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="group">Group</string>
+    <string name="move_student">Move Student</string>
+    <string name="timetable_week">Time structure timetable (Mon – Fri)</string>
+    <string name="subjects">Subjects</string>
+    <string name="lesson">Lesson</string>
+    <string name="designation">Designation</string>
+    <string name="add_lesson">Add Lesson</string>
+    <string name="abort">Abort</string>
+    <string name="save">Save</string>
+    <string name="add_tray">Add Tray</string>
+    <string name="shortcut">Shortcut</string>
+    <string name="subject_french">French</string>
+    <string name="subject_french_short">FR</string>
+    <string name="my_school">My School</string>
+    <string name="canton">Canton: Mean value of all students of the canton</string>
+    <string name="test_values">(Values in brackets): Number of tests performed</string>
+    <string name="school_type">School Type</string>
+    <string name="select_all">All<sup>*</sup></string>
+    <string name="canton_label">Ø Canton<sup>*</sup></string>
+    <string name="sek">Sek<sup>*</sup></string>
+    <string name="real">Real<sup>*</sup></string>
+    <string name="kk">KK<sup>*</sup></string>
+    <string name="ug">UG<sup>*</sup></string>
+    <string name="all_modules">All Modules</string>
+    <string name="table_as_pdf">Table as PDF</string>
+    <string name="table_as_excel">Table as Excel</string>
+    <string name="execution">Execution:</string>
+    <string name="account_info_1">One annual license for the Lernpass plus package is purchased for each student. During a school year, this includes the use of the task pool, the multiple use of the orientation tests, the determination of the situation and the planning tools. As soon as the students log in to their personal workspace for the first time, the annual license is billed.</string>
+    <string name="account_info_2">The linear tests of imagination, technical and logical understanding as well as the self-assessment PSM are charged separately and cost 7 francs each.</string>
+    <string name="customer_number">Customer number: -</string>
+    <string name="package_chf">Package (at CHF 39.95)</string>
+    <string name="package_vv">VV (at CHF 7)</string>
+    <string name="package_tlv">TLV (at CHF 7)</string>
+    <string name="package_psm">PSM (at CHF 7)</string>
+    <string name="preorder_chf">Pre-ordered (in CHF)</string>
+    <string name="generate_account">Generate Account</string>
+    <string name="print_output">Print Output</string>
+    <string name="from_the">From the:</string>
+    <string name="to">To:</string>
+    <string name="date_abbreviation">dd.mm.yyyy</string>
+    <string name="show_information">Information:</string>
+    <string name="export_excel_text">Here you can export the available performance data as an Excel file. Press the Excel icon on the left to export the data.</string>
+    <string name="contact_instruction_1">We would like to tailor the learning pass plus even more to your needs. Please tell us yours \n\nsuggestions and questions. If something doesn\'t work in the system, it\'s best to support us \n\na screenshot of the error.  \n\nThank you for your interest and support.</string>
+    <string name="contact_instruction_2">Lehrmittelverlag St.Gallen Washingtonstrasse 34 9400 Rorschach</string>
+    <string name="contact_instruction_3">Lehrmittelverlag St.Gallen Washingtonstrasse</string>
+    <string name="address_label">Address</string>
+    <string name="address">Lehrmittelverlag St.Gallen \n\nWashingtonstrasse 34\n\n9400 Rorschach</string>
+    <string name="support_lpp">Support Lernpass plus</string>
+    <string name="contact_form">Contact Form</string>
+    <string name="contact_phone_number">+41 58 228 76 90</string>
+    <string name="opening_hours">Opening Hours</string>
+    <string name="opening_timing">Mon - Fri 8.00 a.m. - 12.00 p.m. / 1.00 p.m. - 4.30 p.m</string>
+    <string name="company_holidays">Company Holidays</string>
+    <string name="company_holiday_days">July 26 - 30 (support available 9:00 - 11:00)</string>
+    <string name="company_holiday_year">December 24 - January 2</string>
+    <string name="messages">Messages</string>
+    <string name="all_teachers">All teachers</string>
+    <string name="all_students">All students</string>
+    <string name="no_message">No message available</string>
+    <string name="write_message">write a message</string>
+    <string name="choose_file">Choose a file</string>
+    <string name="upload_file">Upload file</string>
+    <string name="send">Send</string>
+    <string name="new_folder">Create new folder</string>
+    <string name="upload_file_error">Click on \"Upload file\" to upload a file</string>
+    <string name="download">Download</string>
+    <string name="preview">Preview</string>
+    <string name="date">Date</string>
+    <string name="bold">Bold</string>
+    <string name="italic">Italic</string>
+    <string name="underline">Underline</string>
+    <string name="profile">Profile</string>
+    <string name="schoolName">School Name</string>
+    <string name="canton_text">Canton</string>
+    <string name="stGallon">St. Gallen</string>
+    <string name="street">Street</string>
+    <string name="schoolStatus">School Status</string>
+    <string name="privateText">Private</string>
+    <string name="plz">PLZ</string>
+    <string name="ort">Ort</string>
+    <string name="salutation">Salutation</string>
+    <string name="mr">Mr.</string>
+    <string name="newPassword">New Password</string>
+    <string name="toRepeat">To Repeat</string>
+
+
+</resources>

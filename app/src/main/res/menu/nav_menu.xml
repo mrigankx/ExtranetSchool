@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Teacher" android:id="@+id/nav_teacher"/>
+    <item android:title="Teacher Login" android:id="@+id/nav_teacher_login"/>
+    <item android:title="Licenses" android:id="@+id/nav_licenses"/>
+    <item android:title="Classes &amp; learners" android:id="@+id/nav_classesAndLearners"/>
+    <item android:title="Timetable" android:id="@+id/nav_timetable"/>
+    <item android:title="Performance Comparison" android:id="@+id/nav_performanceComparison"/>
+    <item android:title="Performance Comparison Archive" android:id="@+id/nav_performanceComparisonArchive"/>
+    <item android:title="Account" android:id="@+id/nav_account"/>
+    <item android:title="Data Overview" android:id="@+id/nav_dataOverview"/>
+
+    <item android:title="Settings">
+        <menu>
+            <item android:title="@string/contact" android:id="@+id/contacts" />
+            <item android:title="@string/notes" android:id="@+id/nav_notes" />
+            <item android:title="@string/announcements" android:id="@+id/nav_announcements" />
+            <item android:title="@string/documents" android:id="@+id/nav_documents" />
+        </menu>
+    </item>
+
+    <item android:title="Profile">
+        <menu>
+            <item android:title="My Profile" android:id="@+id/schoolProfile" />
+            <item android:title="Logout" android:id="@+id/nav_logout" />
+        </menu>
+    </item>
+
+</menu>

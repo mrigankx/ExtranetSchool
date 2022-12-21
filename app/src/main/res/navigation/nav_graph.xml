@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/schoolProfile">
+
+    <activity
+        android:id="@+id/schoolProfile"
+        android:name="com.example.extranetschool.SchoolProfile"
+        android:label="SchoolProfile" />
+    <activity
+        android:id="@+id/contacts"
+        android:name="com.example.extranetschool.Contacts"
+        android:label="Contacts" />
+</navigation>

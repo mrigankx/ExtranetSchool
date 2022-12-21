@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_brown">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_grey"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/nav_menu"
+        app:navigationIcon="@drawable/profile_picture"
+        app:title="@string/teacher" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginEnd="@dimen/dp8"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_toolbar">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/teacherStatusDropDownList"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/teacher_StatusTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:padding="@dimen/dp10"
+                android:text="@string/teacher"
+                android:textColor="@color/textColor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp48"
+            android:onClick="showTeacherInformation"
+            android:text="@string/information"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            app:backgroundTint="@color/yellow"
+            app:cornerRadius="@dimen/dp16" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/teacher_grid_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp64"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp8"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/info_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp28"
+                android:text="@string/student1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp28"
+                android:text="@string/studentEmail" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/teacher_edit_teacher_details"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="@dimen/dp16"
+            android:background="@color/transparent"
+            android:contentDescription="@string/teacher_edit"
+            app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginBottom="@dimen/dp72"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_grid_view_1"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/teacher_gender"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/top_toolbar">
+
+                <AutoCompleteTextView
+                    android:id="@+id/selectGenderTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    android:padding="@dimen/dp8"
+                    android:text="@string/miss" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/teacher_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/teacher_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/teacher_firstName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/firstName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/teacher_firstName_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/teacher_abbreviation"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/abbreviation">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/teacher_abbreviation_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/teacher_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/email">
+
+                <EditText
+                    android:id="@+id/teacher_TextEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/email"
+                    android:ems="10"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/teacher_cellPhone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/teacher_cell_phone">
+
+                <EditText
+                    android:id="@+id/teacher_cellPhone_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/teacher_cell_phone"
+                    android:ems="10"
+                    android:inputType="number"
+                    tools:ignore="EditableContentDescCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/teacher_phone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/phone">
+
+                <EditText
+                    android:id="@+id/teacher_phone_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/phone"
+                    android:ems="10"
+                    android:inputType="number"
+                    tools:ignore="EditableContentDescCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/teacher_subjectTeacher"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/subject_teacher">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CheckBox" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp8">
+
+                <ImageButton
+                    android:id="@+id/teacher_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp48"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:contentDescription="@string/teacher_save"
+                    app:srcCompat="@drawable/ic_baseline_check_24" />
+
+                <ImageButton
+                    android:id="@+id/teacher_uncheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp48"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:contentDescription="@string/teacher_not_check"
+                    android:rotation="45"
+                    app:srcCompat="@drawable/ic_baseline_add_24" />
+
+                <ImageButton
+                    android:id="@+id/teacher_deactivate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp48"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:contentDescription="@string/teacher_deactivate"
+                    app:srcCompat="@drawable/ic_baseline_not_interested_24" />
+
+                <ImageButton
+                    android:id="@+id/teacher_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp48"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:contentDescription="@string/teacher_save"
+                    app:srcCompat="@drawable/ic_baseline_save_24" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginEnd="@dimen/dp8"
+            android:layout_marginBottom="@dimen/dp8"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/add_import_teacher_action_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/teacher_importTeacher"
+                app:layout_constraintBottom_toBottomOf="@+id/add_person_fab"
+                app:layout_constraintEnd_toStartOf="@+id/add_person_fab"
+                app:layout_constraintTop_toTopOf="@+id/add_person_fab" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_person_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/teacher_importTeacher"
+                app:backgroundTint="@color/yellow"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toTopOf="@+id/add_teacher_fab"
+                app:layout_constraintEnd_toEndOf="@+id/add_teacher_fab"
+                app:layout_constraintStart_toStartOf="@+id/add_teacher_fab"
+                app:srcCompat="@drawable/ic_baseline_arrow_downward_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginEnd="@dimen/dp8"
+            android:layout_marginBottom="@dimen/dp8"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/add_teacher_action_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/teacher_addTeacher"
+                app:layout_constraintBottom_toBottomOf="@+id/add_teacher_fab"
+                app:layout_constraintEnd_toStartOf="@+id/add_teacher_fab"
+                app:layout_constraintTop_toTopOf="@+id/add_teacher_fab" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_teacher_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/teacher_addTeacher"
+                app:backgroundTint="@color/yellow"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toTopOf="@+id/add_new_teacher"
+                app:layout_constraintEnd_toEndOf="@+id/add_new_teacher"
+                app:layout_constraintStart_toStartOf="@+id/add_new_teacher"
+                app:srcCompat="@drawable/ic_baseline_person_add_24" />
+
+
+        </LinearLayout>
+        <!--Action name text for the add person button-->
+        <!--Make sure that you are constraining this Text
+            to the add Person FAB button-->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_new_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginEnd="@dimen/dp8"
+            android:layout_marginBottom="@dimen/dp8"
+            android:contentDescription="@string/teacher_addTeacher"
+            android:src="@drawable/ic_baseline_add_24"
+            app:backgroundTint="@color/yellow"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
